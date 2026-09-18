@@ -620,6 +620,8 @@ are displayed.
     relationships = get_relationship_details(
         article
     )
+    if relationships is None:
+          relationships = []
 
     related_articles = [
         item["article"]
